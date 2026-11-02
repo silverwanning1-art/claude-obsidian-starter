@@ -35,7 +35,7 @@ def block(reason):
             "permissionDecision": decision,
             "permissionDecisionReason": reason,
         }
-    }, ensure_ascii=False))
+    }))  # nur ASCII: unter Windows wäre stdout sonst nicht UTF-8
     sys.exit(0)
 
 
@@ -88,7 +88,7 @@ def strings(value):
 
 
 def main():
-    data = json.load(sys.stdin)
+    data = json.load(sys.stdin.buffer)  # Bytes: json erkennt UTF-8, die Codepage von Windows spielt keine Rolle
     tool = data.get("tool_name", "")
     tool_input = data.get("tool_input", {}) or {}
     cwd = data.get("cwd") or os.getcwd()
