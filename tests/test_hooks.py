@@ -51,7 +51,7 @@ def test_scan_reports_foreign_file_and_skill(env):
     (workspace / "Wissen" / "CLAUDE.md").write_text("fremd", encoding="utf-8")
     (skills / "fremder-skill").mkdir()
     message = run("scan.py", environ)["systemMessage"]
-    assert "CLAUDE.md" in message
+    assert "claude.md" in message.lower()  # Windows zeigt Pfade kleingeschrieben (normcase)
     assert "fremder-skill" in message
 
 
@@ -145,7 +145,7 @@ def test_guard_protects_agents_skills_dir(env):
 def test_scan_reports_agents_override(env):
     environ, workspace, _ = env
     (workspace / "AGENTS.override.md").write_text("fremd", encoding="utf-8")
-    assert "AGENTS.override.md" in run("scan.py", environ)["systemMessage"]
+    assert "agents.override.md" in run("scan.py", environ)["systemMessage"].lower()
 
 
 def test_skills_dir_follows_agent():
