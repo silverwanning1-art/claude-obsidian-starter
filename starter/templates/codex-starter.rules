@@ -1,0 +1,28 @@
+# Verbote für Codex, ergänzt vom Starter (gehört zum Starter, kann bei Updates ersetzt werden).
+# Diese Befehle führt Codex nie aus, auch nicht nach Rückfrage.
+#
+# Lücke: Befehle mit Optionen an anderer Stelle (z. B. `git push origin --force`)
+# und PowerShell `Remove-Item -Recurse` werden hier nicht erfasst.
+
+prefix_rule(
+    pattern = ["git", "push", ["--force", "-f"]],
+    decision = "forbidden",
+    justification = "Force-Push überschreibt die Historie auf dem Server und kann Arbeit unwiederbringlich löschen.",
+    match = ["git push --force origin main"],
+    not_match = ["git push origin main"],
+)
+
+prefix_rule(
+    pattern = ["rm", ["-rf", "-fr"]],
+    decision = "forbidden",
+    justification = "Rekursives Löschen ohne Rückfrage kann ganze Ordner unwiederbringlich entfernen.",
+    match = ["rm -rf build"],
+    not_match = ["rm build.log"],
+)
+
+prefix_rule(
+    pattern = ["rm", "-r", "-f"],
+    decision = "forbidden",
+    justification = "Rekursives Löschen ohne Rückfrage kann ganze Ordner unwiederbringlich entfernen.",
+    match = ["rm -r -f build"],
+)

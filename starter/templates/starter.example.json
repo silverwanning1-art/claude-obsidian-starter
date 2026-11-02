@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "eingerichtet": "2026-11-24",
+  "aktualisiert": null,
+  "agents": ["codex"],
+  "betriebssystem": "linux",
+  "workspace": "/home/anna/workspace",
+  "name": "Anna",
+  "rolle": "Vertrieb bei einem Maschinenbauer",
+  "sprache": "Deutsch",
+  "vault": "Wissen",
+  "bereiche": ["Kunden", "Angebote", "Marketing"],
+  "projekte": ["Angebotsliste"],
+  "programmiert": "nein",
+  "beispiele": true,
+  "einstellungen": { "codex": "ergänzt" },
+  "skills": { "codex": ["seal-session"] },
+  "hooks": { "codex": "eingerichtet" },
+  "global_agents": { "codex": "angelegt" },
+  "kontext": { "Über mich": "ausgefüllt", "Zielgruppe": "später", "Angebot": "später", "Schreibstil": "ausgefüllt", "Arbeitsstil": "ausgefüllt" }
+}

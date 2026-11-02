@@ -1,0 +1,3 @@
+# Ergänzt vom Starter: Codex darf in den Workspace schreiben, auch aus Projekt-Sessions.
+[sandbox_workspace_write]
+writable_roots = ["{{WORKSPACE}}"]

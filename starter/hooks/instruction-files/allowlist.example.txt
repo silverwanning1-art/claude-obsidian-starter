@@ -1,0 +1,14 @@
+# Erlaubte Anweisungsdateien. Eine pro Zeile, absoluter Pfad mit / oder mit ~.
+# Skill-Ordner in ~/.claude/skills (Claude Code) bzw. ~/.agents/skills (Codex) als "skill:<ordnername>".
+# Diese Datei änderst nur du selbst, nie dein KI-Assistent (Claude Code oder Codex) ohne deine Rückfrage.
+
+# Workspace
+~/workspace/AGENTS.md
+~/workspace/CLAUDE.md
+~/workspace/.claude/skills/setup/SKILL.md
+~/workspace/.agents/skills/setup/SKILL.md
+~/workspace/Wissen/AGENTS.md
+~/workspace/Wissen/CLAUDE.md
+
+# Skills in ~/.claude/skills bzw. ~/.agents/skills
+skill:seal-session
