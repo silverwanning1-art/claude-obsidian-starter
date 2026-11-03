@@ -51,7 +51,7 @@ def test_scan_reports_foreign_file_and_skill(env):
     (workspace / "Wissen" / "CLAUDE.md").write_text("fremd", encoding="utf-8")
     (skills / "fremder-skill").mkdir()
     message = run("scan.py", environ)["systemMessage"]
-    assert "CLAUDE.md" in message
+    assert "claude.md" in message.lower()  # Windows zeigt Pfade kleingeschrieben (normcase)
     assert "fremder-skill" in message
 
 
@@ -145,7 +145,7 @@ def test_guard_protects_agents_skills_dir(env):
 def test_scan_reports_agents_override(env):
     environ, workspace, _ = env
     (workspace / "AGENTS.override.md").write_text("fremd", encoding="utf-8")
-    assert "AGENTS.override.md" in run("scan.py", environ)["systemMessage"]
+    assert "agents.override.md" in run("scan.py", environ)["systemMessage"].lower()
 
 
 def test_skills_dir_follows_agent():
@@ -207,3 +207,33 @@ def test_guard_protects_both_programs_regardless_of_agent(env, tmp_path, agent, 
     environ = {**environ, "HOME": str(home), "USERPROFILE": str(home), "INSTRUCTION_AGENT": agent}
     payload = {"tool_name": "Write", "tool_input": {"file_path": str(home.joinpath(*target))}}
     assert decision(run("guard.py", environ, payload)) in ("ask", "deny")
+
+
+def run_bytes(script, env, stdin=b""):
+    """Wie ein Agent: Bytes rein und raus, unabhängig von der Codepage des Systems."""
+    result = subprocess.run(
+        [sys.executable, "-I", str(HOOKS / script)],
+        input=stdin, capture_output=True, env=env, check=True,
+    )
+    return result.stdout
+
+
+def test_guard_reads_utf8_and_answers_in_ascii(env):
+    environ, workspace, _ = env
+    path = workspace / "Über" / "CLAUDE.md"
+    payload = {"tool_name": "Write", "tool_input": {"file_path": str(path)}}
+    raw = run_bytes("guard.py", environ, json.dumps(payload, ensure_ascii=False).encode("utf-8"))
+    assert raw.isascii()
+    output = json.loads(raw)
+    assert decision(output) == "ask"
+    assert "über" in output["hookSpecificOutput"]["permissionDecisionReason"].lower()
+
+
+def test_scan_answers_in_ascii(env):
+    environ, workspace, _ = env
+    folder = workspace / "Büro"
+    folder.mkdir()
+    (folder / "CLAUDE.md").write_text("x", encoding="utf-8")
+    raw = run_bytes("scan.py", environ)
+    assert raw.isascii()
+    assert "büro" in json.loads(raw)["systemMessage"].lower()
