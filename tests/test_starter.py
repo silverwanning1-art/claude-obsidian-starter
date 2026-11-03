@@ -1,5 +1,7 @@
 """Tests für den Aufbau des Starters."""
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -139,6 +141,67 @@ def test_fehlerbaum_example_has_faelle_section():
 def test_codex_global_rules_only_apply_inside_workspace():
     text = (ROOT / "starter/templates/codex-global-AGENTS.template.md").read_text(encoding="utf-8")
     assert "außerhalb von `{{WORKSPACE}}`" in text
+
+
+WIKILINK = re.compile(r"\[\[([^\]]+)\]\]")
+# Wikilinks, die in Regeltexten nur das Format zeigen und auf keine Notiz zielen
+FORMAT_EXAMPLES = {"Wikilinks", "Eintrag"}
+
+
+def _nfc(text):
+    # macOS liefert Dateinamen mit Umlauten teils zerlegt (NFD), die Vorlagen sind NFC
+    return unicodedata.normalize("NFC", text)
+
+
+def _vault_notes():
+    """Notizen des Vaults, wie die Einrichtung ihn aus den Vorlagen anlegt: Pfade ohne .md, relativ zum Vault."""
+    vault = ROOT / "starter/templates/vault"
+    notes = {_nfc(p.relative_to(vault).with_suffix("").as_posix()) for p in vault.rglob("*.md")}
+    notes.add("AGENTS")  # aus vault-AGENTS.template.md
+    return notes
+
+
+def _resolves(target, notes):
+    # Obsidian: [[Ordner/Name]] über den Pfad, [[Name]] über den Dateinamen irgendwo im Vault
+    if "/" in target:
+        return target in notes
+    return any(note.rsplit("/", 1)[-1] == target for note in notes)
+
+
+def test_vault_wikilinks_resolve():
+    notes = _vault_notes()
+    files = [ROOT / "starter/templates/vault-AGENTS.template.md", *(ROOT / "starter/templates/vault").rglob("*.md")]
+    broken = []
+    for path in files:
+        for raw in WIKILINK.findall(_nfc(path.read_text(encoding="utf-8"))):
+            target = raw.split("|", 1)[0].split("#", 1)[0].strip()
+            if target in FORMAT_EXAMPLES or "{{" in target:
+                continue
+            if not _resolves(target, notes):
+                broken.append(f"{path.name}: [[{raw}]]")
+    assert not broken, broken
+
+
+def test_wikilink_check_detects_broken_link():
+    notes = _vault_notes()
+    assert _resolves("00-Kontext/Über mich", notes)
+    assert _resolves(_nfc(unicodedata.normalize("NFD", "00-Kontext/Über mich")), notes)
+    assert _resolves("Schreibstil", notes)
+    assert not _resolves("00-Kontext/Gibt es nicht", notes)
+    assert not _resolves("Kontext/Schreibstil", notes)
+
+
+def test_setup_guards_case_collisions_links_and_cold_start():
+    text = (ROOT / ".claude/skills/setup/SKILL.md").read_text(encoding="utf-8")
+    for required in ("in anderer Schreibweise", "Kaltstart", "in Obsidian nach `V/90-Archiv/` zieht",
+                     "Jeder Wikilink in den angelegten Vault-Dateien"):
+        assert required in text, required
+
+
+def test_concept_template_separates_limits_and_sources():
+    text = (ROOT / "starter/templates/vault/Templates/Konzept.md").read_text(encoding="utf-8")
+    for heading in ("## Kern", "## Grenzen", "## Quelle", "## Offen", "## Verwandt"):
+        assert heading in text, heading
 
 
 def test_internal_docs_are_not_exported():

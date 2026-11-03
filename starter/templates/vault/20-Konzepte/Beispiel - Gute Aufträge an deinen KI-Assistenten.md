@@ -16,6 +16,10 @@ Ein Auftrag an deinen KI-Assistenten ({{AGENT_NAME}}) funktioniert wie eine Übe
 2. **Rahmen**: Was darf {{AGENT_NAME}} nutzen, was nicht? Welche Dateien, welcher Stil, was ist tabu?
 3. **Abnahme**: Woran erkennst du, dass es fertig ist? „Ich kann die Tabelle in Excel öffnen.“
 
+## Grenzen
+
+Bei kleinen, eindeutigen Aufgaben reicht ein Satz. Die drei Teile lohnen sich, sobald das Ergebnis mehr als ein paar Minuten Arbeit ist oder du es weitergibst.
+
 ## Verwandt
 
 - [[Schreibstil]] und [[Arbeitsstil]] in `00-Kontext/`: Dort steht der Rahmen, der immer gilt.
