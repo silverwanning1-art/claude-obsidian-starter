@@ -15,6 +15,7 @@ Dieser Skill läuft in Claude Code und in Codex. Abschnitte mit „Nur Claude Co
 
 - Keine Skripte. Dateien schreibst du auf dem üblichen Weg deines Programms: Claude Code mit Write und Edit, Codex mit `apply_patch`. Unter Codex sind lesende Shell-Befehle erlaubt (`ls`, `cat`, `Get-Content`). Sonstige Shell-Befehle nur dort, wo ein Schritt es ausdrücklich sagt (Python-Prüfung). So läuft die Einrichtung unter Windows (PowerShell), macOS und Linux gleich.
 - Bestehende Dateien nie überschreiben. Ausnahme: die Startdatei `<workspace>/AGENTS.md`, solange sie die Zeile `<!-- starter:bootstrap v1 -->` enthält. Fehlt etwas in einer bestehenden Datei, ergänze es zwischen den Markern `<!-- starter:begin v1 -->` und `<!-- starter:end v1 -->`. Gibt es die Marker schon, ersetze nur den Text dazwischen.
+- Groß- und Kleinschreibung unterscheidet keine Dateien: Unter Windows und macOS sind `agents.md` und `AGENTS.md` dieselbe Datei, Anlegen würde sie still überschreiben. Prüfe deshalb vor jedem Anlegen einer Datei oder eines Ordners, ob es den Namen im Zielordner schon in anderer Schreibweise gibt. Dann gilt er als bestehend, und der Plan nennt die vorhandene Schreibweise.
 - Bestehende Dateien außerhalb des Workspace (Einstellungen deines Programms) nur mit Vorher-nachher und nach einem Ja ergänzen.
 - Pfade in Dateien, JSON und TOML immer mit `/` schreiben, auch unter Windows (`C:/Users/anna/workspace`).
 - Keine Secrets erfragen oder speichern (Passwörter, API-Schlüssel, Tokens).
@@ -110,7 +111,7 @@ Bei einer Aktualisierung zusätzlich:
 
 - Text zwischen den Markern in `<workspace>/AGENTS.md` und `V/AGENTS.md` mit den aktuellen Antworten neu erzeugen, bei zwei Programmen mit den Werten für „beide eingerichtet“. Text außerhalb der Marker bleibt.
 - `projects/README.md` hat keine Marker. Nennt sie den Programmnamen oder den Aufruf von `seal-session`, zeig die Stellen und passe sie nur nach Ja an.
-- Neue Bereiche bekommen neue Unterordner in `V/10-Arbeit/`. Weggefallene Bereiche nie löschen oder verschieben: nenne sie und biete an, sie nach `V/90-Archiv/` zu verschieben. Nur nach Ja.
+- Neue Bereiche bekommen neue Unterordner in `V/10-Arbeit/`. Weggefallene Bereiche nie löschen und nicht ungefragt verschieben. Nenne sie und such vorher im Vault nach Wikilinks auf Notizen darin. Nenne die Notizen, die darauf verweisen, und schlag vor, dass die Person den Ordner in Obsidian nach `V/90-Archiv/` zieht: Obsidian passt die Links dabei selbst an. Will sie, dass du ihn verschiebst: erst kopieren, die Zahl der Dateien in Kopie und Original vergleichen, Links mit Ordnerpfad (`[[10-Arbeit/<Bereich>/…]]`) auf den neuen Pfad ändern und das Original erst nach einem weiteren Ja löschen.
 - In `starter.json` dein Programm unter `agents` ergänzen und `aktualisiert` auf das heutige Datum setzen. Alle übrigen Felder bleiben, außer die Person hat Antworten geändert.
 
 Danach: „Öffne jetzt in Obsidian den Ordner `<Vault-Name>` als Vault (Ordner als Vault öffnen) und sag mir, ob du die Ordner siehst.“ Warte auf die Antwort, ehe du weitermachst. Klappt es nicht, siehe `starter/handout/Troubleshooting.md`. Bei einer Aktualisierung mit schon geöffnetem Vault entfällt das.
@@ -189,6 +190,8 @@ Prüfe und berichte als Liste mit „ok“ oder dem Problem:
 
 - Alle Dateien aus dem Plan existieren, auch `V/AGENTS.md` (außer im Sonderfall aus Schritt 4).
 - In keiner erzeugten Datei steht noch ein Platzhalter in Großbuchstaben (`{{` gefolgt von einem Großbuchstaben).
+- Jeder Wikilink in den angelegten Vault-Dateien zeigt auf eine vorhandene Notiz. Wikilinks, die nur das Format zeigen (`[[Wikilinks]]`, `[[Eintrag]]`), zählen nicht.
+- Kaltstart: Lies `<workspace>/AGENTS.md` und höchstens zwei Dateien, auf die sie verweist, so als wüsstest du nichts von dieser Einrichtung. Kannst du daraus beantworten, wo der Vault liegt, wo ein neues Projekt beginnt, wo du bei einem Fehler zuerst schaust und wo steht, wer die Person ist? Fehlt eine Antwort, ergänze den Verweis zwischen den Markern der Datei, in die er gehört.
 - `starter.json` ist gültiges JSON und nennt dein Programm unter `agents`.
 - `<workspace>/AGENTS.md` beginnt nicht mehr mit `<!-- starter:bootstrap v1 -->` und enthält `Einrichtung: abgeschlossen`.
 - Nur Claude Code: `~/.claude/settings.json` ist gültiges JSON.
