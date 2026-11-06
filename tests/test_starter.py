@@ -116,9 +116,9 @@ def test_seal_session_skill_is_generic():
         assert required in text
 
 
-def test_handouts_cover_codex_and_mint():
-    checklist = (ROOT / "starter/handout/Vorab-Checkliste.md").read_text(encoding="utf-8")
-    trouble = (ROOT / "starter/handout/Troubleshooting.md").read_text(encoding="utf-8")
+def test_readme_and_troubleshooting_cover_codex_and_mint():
+    checklist = (ROOT / "README.md").read_text(encoding="utf-8")
+    trouble = (ROOT / "starter/Troubleshooting.md").read_text(encoding="utf-8")
     hooks = (ROOT / "starter/hooks/instruction-files/README.md").read_text(encoding="utf-8")
     assert "codex --version" in checklist and ".deb" in checklist
     assert "libfuse2" in trouble and "starter-ausgabe" in trouble
@@ -208,4 +208,4 @@ def test_internal_docs_are_not_exported():
     attributes = (ROOT / ".gitattributes").read_text(encoding="utf-8")
     for line in ("/docs export-ignore", "/tests export-ignore", "/.github export-ignore"):
         assert line in attributes
-    assert not list((ROOT / "starter/docs").glob("2026-*"))
+    assert not (ROOT / "starter/docs").exists()

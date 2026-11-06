@@ -17,6 +17,6 @@ Teilnehmer des Workshops arbeiten meist an Firmen-Laptops unter Windows, ohne Ad
 ## Folgen
 
 - Läuft unter PowerShell genauso wie unter Bash, weil keine Skripte nötig sind.
-- Die Qualität hängt am Skill-Text: Wir testen ihn in Probeläufen auf allen drei Systemen (`starter/docs/probelauf.md`).
+- Die Qualität hängt am Skill-Text: Wir testen ihn in Probeläufen auf allen drei Systemen.
 - Updates des Starters bekommen Teilnehmer nicht automatisch. Eine neue Version wird neu heruntergeladen, `setup` ergänzt dann nur, was fehlt.
 - Ein Plugin wäre leichter zu aktualisieren, braucht aber mehr Schritte in der Einrichtung und erklärt weniger, was passiert.
