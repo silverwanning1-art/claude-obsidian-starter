@@ -1,6 +1,10 @@
 # Abschnitt „Programmieren“ für die Root-AGENTS.md
 
-Der Skill `setup` übernimmt genau eine Fassung, ohne Überschrift, je nach Antwort A7.
+Der Skill `setup` übernimmt genau eine Fassung, ohne Überschrift: bei Antwort A6 „später“ die Fassung „später“, sonst je nach Antwort A8.
+
+## Fassung „später“
+
+- Programmieren ist noch nicht eingerichtet. Will {{NAME}} ein erstes Projekt beginnen: vorschlagen, zuerst die Einrichtung zu ergänzen (Skill `setup`), und bis dahin kein Projekt anlegen.
 
 ## Fassung „nein“ und „ein bisschen“
 

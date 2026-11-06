@@ -20,6 +20,8 @@ Die Einrichtung dauert nur dann etwa eine Stunde, wenn diese Schritte vorher erl
 | Git | Coding-Teil | Git for Windows von git-scm.com, „nur für mich“ installieren | im Terminal `git --version`, macOS bietet die Installation dann an | über die Paketverwaltung, z. B. `sudo apt install git` |
 | Python 3 | Coding-Teil, Schutz-Hooks | Installer von python.org, Haken bei „py launcher“ | python.org oder Homebrew | meist schon da, sonst Paketverwaltung |
 
+Git und Python brauchst du nur, wenn du gleich programmieren willst. Die Einrichtung fragt danach. Sagst du „später“, lässt du die beiden Zeilen weg und holst sie nach, wenn du so weit bist.
+
 Codex unter Linux: `npm install -g @openai/codex` braucht mit Node.js aus der Paketverwaltung oft `sudo`. Dann lieber den `curl`-Installer nehmen.
 
 **Ordner:** Einen leeren Ordner `workspace` anlegen, **nicht** in OneDrive, iCloud oder Dropbox.
@@ -34,8 +36,8 @@ Dann den Starter als ZIP herunterladen (grüner Knopf „Code“, dann „Downlo
 | Befehl | Erwartet |
 |---|---|
 | `claude --version` (mit Codex: `codex --version`) | eine Versionsnummer |
-| `git --version` | `git version …` |
-| Windows: `py -3 --version`, sonst `python3 --version` | `Python 3.…` |
+| `git --version` (nur fürs Programmieren) | `git version …` |
+| Windows: `py -3 --version`, sonst `python3 --version` (nur fürs Programmieren) | `Python 3.…` |
 
 Einmal `claude` bzw. `codex` starten und anmelden, Obsidian einmal öffnen. Klappt etwas nicht, steht die Lösung meist im [Troubleshooting](starter/Troubleshooting.md).
 

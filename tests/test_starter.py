@@ -223,3 +223,15 @@ def test_notion_variant_is_complete_and_vault_free():
         text = path.read_text(encoding="utf-8")
         for forbidden in ("Vault", "Wikilink", "[[", "Obsidian"):
             assert forbidden not in text, (path.name, forbidden)
+
+
+def test_coding_can_be_postponed():
+    questions = (ROOT / ".claude/skills/setup/fragen.md").read_text(encoding="utf-8")
+    skill = (ROOT / ".claude/skills/setup/SKILL.md").read_text(encoding="utf-8")
+    programmieren = (ROOT / "starter/templates/programmieren.template.md").read_text(encoding="utf-8")
+    example = json.loads((ROOT / "starter/templates/starter.example.json").read_text(encoding="utf-8"))
+    assert "[`coding`]" in questions and "A1 bis A9" in questions
+    assert "Antwort A7 als Liste" in skill and "je nach Antwort A8" in skill
+    assert "**Programmieren später** (A6)" in skill and "`.gitkeep`" in skill
+    assert "## Fassung „später“" in programmieren
+    assert example["coding"] in ("jetzt", "später")
