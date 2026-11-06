@@ -69,6 +69,7 @@ Bestehende Dateien werden nie überschrieben. Die Einrichtung lässt sich wieder
 | `starter/templates/` | Vorlagen für Regeln, Vault und Einstellungen |
 | `starter/skills/` | Skills, die bei der Einrichtung installiert werden |
 | `starter/hooks/` | Schutz vor fremden Anweisungsdateien |
+| `starter/notion/` | Variante mit Notion statt Obsidian, für Codex, Einrichtung von Hand |
 | `starter/Troubleshooting.md` | bekannte Probleme und Lösungen |
 
 Entscheidungen zum Aufbau des Starters stehen unter [`docs/adr/`](docs/adr/). Sie sind nicht im ZIP enthalten.
