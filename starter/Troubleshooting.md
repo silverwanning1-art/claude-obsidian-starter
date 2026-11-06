@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Format: Symptom, Ursache, Lösung. Wird nach jedem Probelauf und Workshop ergänzt.
+Format: Symptom, Ursache, Lösung. Fehlt dein Problem, frag deinen KI-Assistenten und nenn ihm die genaue Fehlermeldung.
 
 ## Befehl wird nicht gefunden, obwohl das Programm installiert ist (Windows)
 
