@@ -209,3 +209,17 @@ def test_internal_docs_are_not_exported():
     for line in ("/docs export-ignore", "/tests export-ignore", "/.github export-ignore"):
         assert line in attributes
     assert not list((ROOT / "starter/docs").glob("2026-*"))
+
+
+def test_notion_variant_is_complete_and_vault_free():
+    notion = ROOT / "starter/notion"
+    rules = (notion / "codex-AGENTS.template.md").read_text(encoding="utf-8")
+    assert rules.startswith("<!-- starter:begin notion v1 -->")
+    assert rules.rstrip().endswith("<!-- starter:end notion v1 -->")
+    assert "außerhalb von `{{WORKSPACE}}`" in rules and "{{NOTION_START}}" in rules
+    skill = (notion / "seal-session.SKILL.template.md").read_text(encoding="utf-8")
+    assert skill.startswith("---\nname: seal-session\n")
+    for path in notion.glob("*.template.md"):
+        text = path.read_text(encoding="utf-8")
+        for forbidden in ("Vault", "Wikilink", "[[", "Obsidian"):
+            assert forbidden not in text, (path.name, forbidden)

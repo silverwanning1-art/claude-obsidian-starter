@@ -33,6 +33,7 @@ Bestehende Dateien werden nie überschrieben. Die Einrichtung lässt sich wieder
 | `starter/templates/` | Vorlagen für Regeln, Vault und Einstellungen |
 | `starter/skills/` | Skills, die bei der Einrichtung installiert werden |
 | `starter/hooks/` | Schutz vor fremden Anweisungsdateien |
+| `starter/notion/` | Variante mit Notion statt Obsidian, für Codex, Einrichtung von Hand |
 | `starter/handout/` | Handout, Vorab-Checkliste, Troubleshooting |
 | `starter/docs/` | Entscheidungen (ADR) und Probeläufe |
 
