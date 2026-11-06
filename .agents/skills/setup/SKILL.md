@@ -31,7 +31,7 @@ Vorlagen liegen unter `<workspace>/starter/templates/`. Platzhalter sind in Gro�
 | `{{DATUM}}` | heutiges Datum, `JJJJ-MM-TT` |
 | `{{WORKSPACE}}` | absoluter Pfad von `<workspace>` mit `/` |
 | `{{BEREICHE_ZEILEN}}` | erst die Zeile `` | `10-Arbeit/` | Arbeit, je Bereich ein Unterordner | ``, dann je Bereich `` | `10-Arbeit/<Bereich>/` | <ein Satz> | `` |
-| `{{PROJEKTE}}` | Antwort A6 als Liste, bei „noch keins“: `- noch keins` |
+| `{{PROJEKTE}}` | Antwort A7 als Liste, bei „noch keins“: `- noch keins` |
 | `{{PROGRAMMIEREN}}` | siehe Schritt 4 |
 | `{{AGENT_NAME}}` | Claude Code: `Claude`. Codex: `Codex`. Beide eingerichtet: `Claude bzw. Codex` |
 | `{{SEAL}}` | samt Backticks. Claude Code: `` `/seal-session` ``. Codex: `` `$seal-session` ``. Beide eingerichtet: `` `/seal-session` (Claude Code) bzw. `$seal-session` (Codex) `` |
@@ -62,7 +62,7 @@ Prüfe still und berichte dann in höchstens fünf Zeilen:
 
 ## Schritt 2: Interview
 
-Lies `fragen.md` in diesem Ordner und stelle **Block A**: neu oder, bei einer Aktualisierung, nach dem Abschnitt „Aktualisierung“ dort. Eine Frage pro Nachricht, jede mit einem Vorschlag, den die Person mit „ja“ übernehmen kann. Fasse am Ende von Block A die Antworten in einer kurzen Liste zusammen und frag, ob sie stimmen.
+Lies `fragen.md` in diesem Ordner und stelle **Block A**: neu oder, bei einer Aktualisierung, nach dem Abschnitt „Aktualisierung“ dort. Eine Frage pro Nachricht, jede außer A6 mit einem Vorschlag, den die Person mit „ja“ übernehmen kann. Fasse am Ende von Block A die Antworten in einer kurzen Liste zusammen und frag, ob sie stimmen.
 
 Block B (Kontext) kommt erst in Schritt 7.
 
@@ -90,7 +90,7 @@ Warte auf ein ausdrückliches Ja. Bei Änderungswünschen den Plan anpassen und 
 
 In dieser Reihenfolge, `V` steht für `<workspace>/<Vault-Name>`:
 
-1. `<workspace>/projects/README.md` aus `templates/projects-README.template.md`. Die Vorlage `templates/STAND.template.md` brauchst du jetzt nicht, die Regeln aus Punkt 4 verweisen für neue Projekte darauf.
+1. Bei A6 „später“: nur den Ordner `<workspace>/projects/` mit einer leeren `.gitkeep`-Datei. Sonst `<workspace>/projects/README.md` aus `templates/projects-README.template.md`. Die Vorlage `templates/STAND.template.md` brauchst du jetzt nicht, die Regeln aus Punkt 4 verweisen für neue Projekte darauf.
 2. Den Vault:
    - `V/AGENTS.md` aus `templates/vault-AGENTS.template.md` (Konventionen für Notizen) und `V/CLAUDE.md` aus `templates/vault-CLAUDE.template.md` (Verweisdatei, siehe Hinweis oben).
    - Gibt es schon eine `V/CLAUDE.md` ohne die Zeile `@AGENTS.md`: stehen lassen und keine `V/AGENTS.md` anlegen. Nur Codex: Sag der Person, dass Codex die Vault-Regeln erst sieht, wenn sie `V/CLAUDE.md` in `V/AGENTS.md` umbenennt und eine neue `V/CLAUDE.md` mit `@AGENTS.md` anlegt.
@@ -104,12 +104,13 @@ In dieser Reihenfolge, `V` steht für `<workspace>/<Vault-Name>`:
 3. Obsidian-Einstellungen. Gibt es eine Datei nicht, mit diesem Inhalt anlegen. Gibt es sie, nur fehlende Schlüssel ergänzen.
    - `V/.obsidian/app.json`: `{ "attachmentFolderPath": "Attachments", "alwaysUpdateLinks": true }`
    - `V/.obsidian/templates.json`: `{ "folder": "Templates" }`
-4. `<workspace>/AGENTS.md` aus `templates/root-AGENTS.template.md`. `{{PROGRAMMIEREN}}` ist die passende Fassung aus `templates/programmieren.template.md`, je nach Antwort A7. Hat die Person eigene Regeln (Schritt 1, Punkt 6), den ganzen Block zwischen den Markern am Ende ihrer Datei ergänzen. `<workspace>/CLAUDE.md` (Verweisdatei) gibt es schon, sie bleibt.
+4. `<workspace>/AGENTS.md` aus `templates/root-AGENTS.template.md`. `{{PROGRAMMIEREN}}` ist die passende Fassung aus `templates/programmieren.template.md`: bei A6 „später“ die Fassung „später“, sonst je nach Antwort A8. Hat die Person eigene Regeln (Schritt 1, Punkt 6), den ganzen Block zwischen den Markern am Ende ihrer Datei ergänzen. `<workspace>/CLAUDE.md` (Verweisdatei) gibt es schon, sie bleibt.
 5. `<workspace>/.claude/starter.json` nach dem Muster in `templates/starter.example.json`. Felder, die je Programm gelten (`einstellungen`, `skills`, `hooks`, `global_agents`), haben `claude` bzw. `codex` als Schlüssel. Die Einträge darin setzt du in den Schritten 5 bis 7.
 
 Bei einer Aktualisierung zusätzlich:
 
 - Text zwischen den Markern in `<workspace>/AGENTS.md` und `V/AGENTS.md` mit den aktuellen Antworten neu erzeugen, bei zwei Programmen mit den Werten für „beide eingerichtet“. Text außerhalb der Marker bleibt.
+- Wechselt A6 von „später“ auf „jetzt“: `projects/README.md` anlegen (die `.gitkeep` bleibt) und Schritt 6 anbieten, auch wenn dort `später` steht.
 - `projects/README.md` hat keine Marker. Nennt sie den Programmnamen oder den Aufruf von `seal-session`, zeig die Stellen und passe sie nur nach Ja an.
 - Neue Bereiche bekommen neue Unterordner in `V/10-Arbeit/`. Weggefallene Bereiche nie löschen und nicht ungefragt verschieben. Nenne sie und such vorher im Vault nach Wikilinks auf Notizen darin. Nenne die Notizen, die darauf verweisen, und schlag vor, dass die Person den Ordner in Obsidian nach `V/90-Archiv/` zieht: Obsidian passt die Links dabei selbst an. Will sie, dass du ihn verschiebst: erst kopieren, die Zahl der Dateien in Kopie und Original vergleichen, Links mit Ordnerpfad (`[[10-Arbeit/<Bereich>/…]]`) auf den neuen Pfad ändern und das Original erst nach einem weiteren Ja löschen.
 - In `starter.json` dein Programm unter `agents` ergänzen und `aktualisiert` auf das heutige Datum setzen. Alle übrigen Felder bleiben, außer die Person hat Antworten geändert.
@@ -158,6 +159,8 @@ Erkläre in drei Sätzen: Dein Programm liest Dateien wie `AGENTS.md` oder `SKIL
 
 `H` ist der Hook-Ordner deines Programms (Tabelle oben).
 
+**Programmieren später** (A6): Den Schritt überspringen und sagen: „Diesen Schutz richten wir ein, wenn du mit dem Programmieren anfängst. Er braucht Python, und fremde Anweisungsdateien kommen vor allem mit fremdem Code.“ In `starter.json`: `hooks.<programm>` = `später`. Weiter mit Schritt 7.
+
 **Schon eingerichtet**: Steht in `starter.json` unter `hooks` für dein Programm `eingerichtet`, frag nicht neu und kopiere keine Skripte. Lies nur `H/allowlist.txt` und vergleiche sie mit der Liste aus Punkt 4 unten. Nenne der Person nur die Zeilen, die fehlen; Zeilen, die schon dastehen, nie doppelt eintragen. Nur Claude Code: nach einem Ja selbst ergänzen. Nur Codex: Die Person trägt sie von Hand ein, denn der Hook lehnt das Schreiben in `H/` ab. Fehlt nichts, sag „Der Schutz ist schon eingerichtet“ und mach mit Schritt 7 weiter.
 
 Sonst frag, ob die Person das einrichten will. Wenn ja:
@@ -201,4 +204,4 @@ Dann zum Schluss:
 
 1. Eine Liste aller Änderungen, gruppiert nach Workspace, Vault und Einstellungen deines Programms.
 2. Der Hinweis: „Beende diese Session und starte eine neue im selben Ordner. Erst dann gelten deine neuen Regeln.“
-3. Drei nächste Schritte, angepasst an die Antworten, zum Beispiel: eine Notiz in einem Bereich anlegen lassen, ein erstes Projekt unter `projects/` beginnen, am Ende einer Session `/seal-session` (Claude Code) bzw. `$seal-session` (Codex) ausprobieren. Nenne nur den Aufruf deines Programms.
+3. Drei nächste Schritte, angepasst an die Antworten, zum Beispiel: eine Notiz in einem Bereich anlegen lassen, ein erstes Projekt unter `projects/` beginnen, am Ende einer Session `/seal-session` (Claude Code) bzw. `$seal-session` (Codex) ausprobieren. Nenne nur den Aufruf deines Programms. Bei A6 „später“ kein Projekt vorschlagen, sondern sagen, dass sich das Programmieren jederzeit mit „Einrichtung ergänzen“ nachholen lässt.
