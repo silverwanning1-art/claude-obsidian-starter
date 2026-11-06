@@ -114,7 +114,7 @@ Bei einer Aktualisierung zusätzlich:
 - Neue Bereiche bekommen neue Unterordner in `V/10-Arbeit/`. Weggefallene Bereiche nie löschen und nicht ungefragt verschieben. Nenne sie und such vorher im Vault nach Wikilinks auf Notizen darin. Nenne die Notizen, die darauf verweisen, und schlag vor, dass die Person den Ordner in Obsidian nach `V/90-Archiv/` zieht: Obsidian passt die Links dabei selbst an. Will sie, dass du ihn verschiebst: erst kopieren, die Zahl der Dateien in Kopie und Original vergleichen, Links mit Ordnerpfad (`[[10-Arbeit/<Bereich>/…]]`) auf den neuen Pfad ändern und das Original erst nach einem weiteren Ja löschen.
 - In `starter.json` dein Programm unter `agents` ergänzen und `aktualisiert` auf das heutige Datum setzen. Alle übrigen Felder bleiben, außer die Person hat Antworten geändert.
 
-Danach: „Öffne jetzt in Obsidian den Ordner `<Vault-Name>` als Vault (Ordner als Vault öffnen) und sag mir, ob du die Ordner siehst.“ Warte auf die Antwort, ehe du weitermachst. Klappt es nicht, siehe `starter/handout/Troubleshooting.md`. Bei einer Aktualisierung mit schon geöffnetem Vault entfällt das.
+Danach: „Öffne jetzt in Obsidian den Ordner `<Vault-Name>` als Vault (Ordner als Vault öffnen) und sag mir, ob du die Ordner siehst.“ Warte auf die Antwort, ehe du weitermachst. Klappt es nicht, siehe `starter/Troubleshooting.md`. Bei einer Aktualisierung mit schon geöffnetem Vault entfällt das.
 
 ## Schritt 5: Einstellungen
 
