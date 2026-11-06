@@ -62,7 +62,7 @@ Prüfe still und berichte dann in höchstens fünf Zeilen:
 
 ## Schritt 2: Interview
 
-Lies `fragen.md` in diesem Ordner und stelle **Block A**: neu oder, bei einer Aktualisierung, nach dem Abschnitt „Aktualisierung“ dort. Eine Frage pro Nachricht, jede mit einem Vorschlag, den die Person mit „ja“ übernehmen kann. Fasse am Ende von Block A die Antworten in einer kurzen Liste zusammen und frag, ob sie stimmen.
+Lies `fragen.md` in diesem Ordner und stelle **Block A**: neu oder, bei einer Aktualisierung, nach dem Abschnitt „Aktualisierung“ dort. Eine Frage pro Nachricht, jede außer A6 mit einem Vorschlag, den die Person mit „ja“ übernehmen kann. Fasse am Ende von Block A die Antworten in einer kurzen Liste zusammen und frag, ob sie stimmen.
 
 Block B (Kontext) kommt erst in Schritt 7.
 
