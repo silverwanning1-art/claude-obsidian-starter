@@ -273,3 +273,17 @@ def test_readme_covers_desktop_app_and_refresh():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     assert "Desktop-App" in readme and "Starter auffrischen" in readme
     assert "starter/beispieldaten/" in readme
+
+
+def test_rules_put_the_person_first():
+    root = (ROOT / "starter/templates/root-AGENTS.template.md").read_text(encoding="utf-8")
+    assert "nach dem Zweck fragen" in root and "als zwei bis drei Optionen" in root
+    assert "außerhalb des Ordners, in dem die Session gestartet wurde" in root
+    programmieren = (ROOT / "starter/templates/programmieren.template.md").read_text(encoding="utf-8")
+    beginner = programmieren.split("## Fassung „nein“ und „ein bisschen“", 1)[1].split("## Fassung „ja“", 1)[0]
+    assert "eine sichtbare Funktion" in beginner and "zuerst selbst testen" in beginner
+
+
+def test_sample_data_suggests_questions():
+    readme = (ROOT / "starter/beispieldaten/README.md").read_text(encoding="utf-8")
+    assert "## Mögliche Fragestellungen" in readme and "Autoindustrie" in readme
