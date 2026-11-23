@@ -13,7 +13,7 @@ Format: Symptom, Ursache, Lösung. Fehlt dein Problem, frag deinen KI-Assistente
 1. Startmenü, „Umgebungsvariablen für dieses Konto bearbeiten“ suchen und öffnen.
 2. Oben bei den Benutzervariablen `Path` auswählen, „Bearbeiten“, „Neu“.
 3. Den Ordner eintragen, in dem `git.exe` liegt. Meist `C:\Users\<name>\AppData\Local\Programs\Git\cmd`. Für `gh` den Ordner mit `gh.exe`.
-4. Mit OK schließen, **alle** Terminals schließen und ein neues öffnen.
+4. Mit OK schließen, **alle** Terminals schließen und ein neues öffnen. Mit der Desktop-App: die App ganz beenden und neu starten, sie liest das Profil der PowerShell nicht.
 5. Prüfen: `git --version`.
 
 ## Dateien lassen sich nicht schreiben, oder es tauchen Konfliktkopien auf
