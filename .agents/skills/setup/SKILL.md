@@ -35,6 +35,9 @@ Vorlagen liegen unter `<workspace>/starter/templates/`. Platzhalter sind in Gro�
 | `{{PROGRAMMIEREN}}` | siehe Schritt 4 |
 | `{{AGENT_NAME}}` | Claude Code: `Claude`. Codex: `Codex`. Beide eingerichtet: `Claude bzw. Codex` |
 | `{{SEAL}}` | samt Backticks. Claude Code: `` `/seal-session` ``. Codex: `` `$seal-session` ``. Beide eingerichtet: `` `/seal-session` (Claude Code) bzw. `$seal-session` (Codex) `` |
+| `{{EINSTELLUNGEN}}` | samt Backticks. Claude Code: `` `~/.claude/settings.json` ``. Codex: `` `~/.codex/config.toml` und `~/.codex/rules/` ``. Beide eingerichtet: beide, mit „bzw.“ verbunden |
+| `{{SKILLS_ORDNER}}` | samt Backticks. Claude Code: `` `~/.claude/skills/` ``. Codex: `` `~/.agents/skills/` ``. Beide eingerichtet: beide, mit „bzw.“ verbunden |
+| `{{HOOKS_ORDNER}}` | samt Backticks. Claude Code: `` `~/.claude/hooks/` ``. Codex: `` `~/.codex/hooks/` ``. Beide eingerichtet: beide, mit „bzw.“ verbunden |
 
 „Beide eingerichtet“ heißt: In `starter.json` stehen nach diesem Lauf `claude` und `codex` unter `agents`.
 
@@ -99,7 +102,8 @@ In dieser Reihenfolge, `V` steht für `<workspace>/<Vault-Name>`:
    - `V/40-Fehlerbaum/Index.md` und `V/40-Fehlerbaum/Eintraege/` aus `templates/vault/40-Fehlerbaum/`
    - `V/Templates/` aus `templates/vault/Templates/`
    - `V/Inbox.md` aus `templates/vault/Inbox.md`
-   - Hat die Person in Block A Beispiele gewollt: `templates/vault/20-Konzepte/` und den Beispiel-Eintrag im Fehlerbaum übernehmen. Sonst weglassen und im Index die Beispielzeile streichen.
+   - Immer: die Erklärnotizen `So ist mein KI-Betriebssystem aufgebaut.md` und `Git in drei Begriffen.md` aus `templates/vault/20-Konzepte/` nach `V/20-Konzepte/`. Sie erklären der Person, wie ihr Workspace aufgebaut ist, und bleiben auch ohne Beispiele.
+   - Hat die Person in Block A Beispiele gewollt: die Dateien mit `Beispiel - ` im Namen aus `templates/vault/20-Konzepte/` und den Beispiel-Eintrag im Fehlerbaum übernehmen. Sonst weglassen und im Index die Beispielzeile streichen.
    - `V/00-Kontext/` aus `templates/vault/00-Kontext/`, zunächst unverändert mit den Leitfragen. Gefüllt wird in Schritt 7.
 3. Obsidian-Einstellungen. Gibt es eine Datei nicht, mit diesem Inhalt anlegen. Gibt es sie, nur fehlende Schlüssel ergänzen.
    - `V/.obsidian/app.json`: `{ "attachmentFolderPath": "Attachments", "alwaysUpdateLinks": true }`
@@ -112,6 +116,7 @@ Bei einer Aktualisierung zusätzlich:
 - Text zwischen den Markern in `<workspace>/AGENTS.md` und `V/AGENTS.md` mit den aktuellen Antworten neu erzeugen, bei zwei Programmen mit den Werten für „beide eingerichtet“. Text außerhalb der Marker bleibt.
 - Wechselt A6 von „später“ auf „jetzt“: `projects/README.md` anlegen (die `.gitkeep` bleibt) und Schritt 6 anbieten, auch wenn dort `später` steht.
 - `projects/README.md` hat keine Marker. Nennt sie den Programmnamen oder den Aufruf von `seal-session`, zeig die Stellen und passe sie nur nach Ja an.
+- Neue Vorlagen: Gibt es unter `templates/vault/` Dateien, die im Vault fehlen (Beispiele nur, wenn die Person sie gewollt hat), nenne sie mit einem Satz, wofür sie da sind, und lege sie nach einem Ja an. Vorhandene Notizen mit gleichem Namen bleiben unverändert.
 - Neue Bereiche bekommen neue Unterordner in `V/10-Arbeit/`. Weggefallene Bereiche nie löschen und nicht ungefragt verschieben. Nenne sie und such vorher im Vault nach Wikilinks auf Notizen darin. Nenne die Notizen, die darauf verweisen, und schlag vor, dass die Person den Ordner in Obsidian nach `V/90-Archiv/` zieht: Obsidian passt die Links dabei selbst an. Will sie, dass du ihn verschiebst: erst kopieren, die Zahl der Dateien in Kopie und Original vergleichen, Links mit Ordnerpfad (`[[10-Arbeit/<Bereich>/…]]`) auf den neuen Pfad ändern und das Original erst nach einem weiteren Ja löschen.
 - In `starter.json` dein Programm unter `agents` ergänzen und `aktualisiert` auf das heutige Datum setzen. Alle übrigen Felder bleiben, außer die Person hat Antworten geändert.
 
@@ -130,7 +135,11 @@ Diese Dateien gelten für alle Sessions der Person, deshalb besonders vorsichtig
    - `deny`-Regeln: Claude darf keine `.env`-Dateien lesen (dort stehen oft Passwörter), keinen Force-Push und kein rekursives Löschen ausführen.
 4. Nur nach einem Ja schreiben. Danach die Datei noch einmal lesen und prüfen, ob sie gültiges JSON ist.
 
-Skills: Gibt es `~/.claude/skills/<name>/` schon, überspringe den Skill und sag es („`<name>` ist schon da, bleibt unverändert“). Für die übrigen Ordner unter `<workspace>/starter/skills/`, die eine `SKILL.md` enthalten, frag einmal gesammelt, ob sie nach `~/.claude/skills/<name>/` kopiert werden sollen. Kopiere alle Dateien des Ordners.
+Skills: Für jeden Ordner unter `<workspace>/starter/skills/`, der eine `SKILL.md` enthält, prüfe `~/.claude/skills/<name>/`:
+
+- Fehlt er: frag einmal gesammelt, ob die fehlenden Skills nach `~/.claude/skills/<name>/` kopiert werden sollen. Kopiere alle Dateien des Ordners.
+- Gibt es ihn mit gleichem Inhalt: sag „`<name>` ist aktuell“.
+- Gibt es ihn mit anderem Inhalt: sag, dass der Starter eine neuere Fassung mitbringt, und fasse den Unterschied in zwei bis drei Sätzen zusammen (was neu ist, was wegfällt). Hat die Person den Skill selbst angepasst, sag das deutlich, denn ihre Änderungen gingen verloren. Ersetzen nur nach Ja, sonst bleibt er unverändert.
 
 In `starter.json`: `einstellungen.claude` (`angelegt`, `ergänzt` oder `übersprungen`), `skills.claude` (Liste).
 
@@ -147,7 +156,7 @@ Sag vorher: „Codex fragt gleich mehrmals, ob es außerhalb dieses Ordners schr
 2. **`~/.codex/rules/starter.rules`** (Verbote: kein Force-Push, kein rekursives Löschen) aus `templates/codex-starter.rules`. Gibt es die Datei schon, nicht anfassen und es sagen.
 3. **`~/.codex/AGENTS.md`** (Regeln für alle Codex-Sessions) aus `templates/codex-global-AGENTS.template.md`. Gibt es sie, den Block zwischen den Markern am Ende ergänzen bzw. ersetzen, mit Vorher-nachher und Ja. Erkläre: Codex liest Regeln nur aus dem Startordner. Diese Datei sagt Codex in jeder Session, wo Workspace-Regeln und Fehlerbaum liegen.
 4. Sag offen: „Codex kennt kein Leseverbot für Dateien. Dass `.env`-Dateien (dort stehen oft Passwörter) nicht gelesen werden, steht nur als Regel in deiner `AGENTS.md`.“
-5. **Skills**: Gibt es `~/.agents/skills/<name>/` schon, den Skill überspringen und es sagen („`<name>` ist schon da, bleibt unverändert“). Für die übrigen Ordner unter `<workspace>/starter/skills/` mit einer `SKILL.md` einmal gesammelt fragen, ob sie nach `~/.agents/skills/<name>/` kopiert werden sollen.
+5. **Skills**: wie unter Claude Code beschrieben, nur mit `~/.agents/skills/<name>/`: fehlende einmal gesammelt anbieten, gleiche als aktuell melden, bei anderem Inhalt den Unterschied zusammenfassen und nur nach Ja ersetzen.
 
 Lässt Codex einen Schreibvorgang nicht zu (abgelehnt oder `approval_policy = "never"`): Lege die fertige Datei unter `<workspace>/starter-ausgabe/<Zielname>` ab, nenne den Zielpfad und den Kopierbefehl (Linux und macOS: `mkdir -p` und `cp`, Windows: `New-Item -ItemType Directory -Force` und `Copy-Item`) und mach weiter. Dateien, die als Anweisung gelten, bekommen dort einen anderen Namen (`codex-AGENTS.md`), der Kopierbefehl benennt sie um. Skills und Hook-Skripte nicht ablegen, der Kopierbefehl nimmt sie direkt aus `starter/`. In `starter.json` steht dann `"von Hand kopieren"`.
 
