@@ -235,3 +235,41 @@ def test_coding_can_be_postponed():
     assert "**Programmieren später** (A6)" in skill and "`.gitkeep`" in skill
     assert "## Fassung „später“" in programmieren
     assert example["coding"] in ("jetzt", "später")
+
+
+def test_sample_data_ships_with_starter():
+    data = ROOT / "starter/beispieldaten"
+    header = "monat,land_code,land,branche_code,branche,produktionsindex"
+    for name in ("teil1_bis_2025-12.csv", "teil2_2026-01_bis_heute.csv"):
+        assert (data / name).read_text(encoding="utf-8").splitlines()[0] == header, name
+    readme = (data / "README.md").read_text(encoding="utf-8")
+    assert "CC BY 4.0" in readme and "sts_inpr_m" in readme
+
+
+def test_explainer_notes_are_always_created():
+    concepts = ROOT / "starter/templates/vault/20-Konzepte"
+    for name in ("So ist mein KI-Betriebssystem aufgebaut.md", "Git in drei Begriffen.md"):
+        assert (concepts / name).is_file(), name
+    skill = (ROOT / ".claude/skills/setup/SKILL.md").read_text(encoding="utf-8")
+    assert "So ist mein KI-Betriebssystem aufgebaut.md" in skill and "Git in drei Begriffen.md" in skill
+    for placeholder in ("{{EINSTELLUNGEN}}", "{{SKILLS_ORDNER}}", "{{HOOKS_ORDNER}}"):
+        assert placeholder in skill, placeholder
+
+
+def test_update_refreshes_skills_and_offers_new_templates():
+    skill = (ROOT / ".claude/skills/setup/SKILL.md").read_text(encoding="utf-8")
+    assert "überspringe den Skill" not in skill and "den Skill überspringen" not in skill
+    assert "Unterschied" in skill and "neuere Fassung" in skill
+    assert "Neue Vorlagen" in skill
+
+
+def test_seal_session_keeps_preferences_in_files():
+    text = (ROOT / "starter/skills/seal-session/SKILL.md").read_text(encoding="utf-8")
+    assert "disable-model-invocation: true" in text and "$ARGUMENTS" in text
+    assert "automatische Gedächtnis" in text and "Regeln und Vorlieben" in text
+
+
+def test_readme_covers_desktop_app_and_refresh():
+    readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    assert "Desktop-App" in readme and "Starter auffrischen" in readme
+    assert "starter/beispieldaten/" in readme
