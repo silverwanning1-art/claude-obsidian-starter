@@ -30,7 +30,7 @@ Codex unter Linux: `npm install -g @openai/codex` braucht mit Node.js aus der Pa
 - Windows: `C:\Users\<name>\workspace`. Achtung: Auf Firmen-Laptops liegen „Dokumente“ und „Desktop“ oft schon in OneDrive.
 - macOS und Linux: `~/workspace`
 
-Dann den Starter als ZIP herunterladen (grüner Knopf „Code“, dann „Download ZIP“) und den **Inhalt** in diesen Ordner entpacken. Im Ordner `workspace` liegen danach direkt `AGENTS.md`, `README.md` und `starter/`.
+Dann den Starter als ZIP herunterladen (grüner Knopf „Code“, dann „Download ZIP“) und den **Inhalt** in diesen Ordner entpacken. Im Ordner `workspace` liegen danach direkt `AGENTS.md`, `README.md` und `starter/`, dazu die Ordner `.claude` und `.agents`. Darin steckt die Einrichtung. Auf dem Mac blendet der Finder Ordner mit Punkt am Anfang aus und lässt sie beim Kopieren leicht zurück: Mit **⌘ ⇧ .** (Cmd + Shift + Punkt) machst du sie sichtbar. Unter Windows sind sie meist sichtbar, sonst im Explorer unter Ansicht → Einblenden → „Ausgeblendete Elemente“.
 
 **Prüfen:** Ein neues Terminal öffnen (Windows: PowerShell) und eingeben:
 

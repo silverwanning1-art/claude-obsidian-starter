@@ -16,6 +16,14 @@ Format: Symptom, Ursache, Lösung. Fehlt dein Problem, frag deinen KI-Assistente
 4. Mit OK schließen, **alle** Terminals schließen und ein neues öffnen. Mit der Desktop-App: die App ganz beenden und neu starten, sie liest das Profil der PowerShell nicht.
 5. Prüfen: `git --version`.
 
+## „los“ startet keine Einrichtung, der Skill `setup` fehlt
+
+**Symptom:** Nach „los“ kennt dein KI-Assistent keinen Skill `setup` oder fängt nicht mit der Einrichtung an.
+
+**Ursache:** Die Ordner `.claude` und `.agents` fehlen im Workspace. Sie beginnen mit einem Punkt, deshalb blendet der Finder auf dem Mac sie aus, und beim Kopieren des ZIP-Inhalts bleiben sie leicht zurück.
+
+**Lösung:** Versteckte Dateien einblenden: Mac **⌘ ⇧ .** (Cmd + Shift + Punkt) im Finder, Windows im Explorer Ansicht → Einblenden → „Ausgeblendete Elemente“. Dann `.claude` und `.agents` aus dem entpackten ZIP in den Ordner `workspace` kopieren und eine neue Session starten. Im Terminal prüfen: macOS und Linux `ls -a`, Windows `Get-ChildItem -Force`.
+
 ## Dateien lassen sich nicht schreiben, oder es tauchen Konfliktkopien auf
 
 **Ursache:** Der Workspace liegt in OneDrive, iCloud oder Dropbox.
