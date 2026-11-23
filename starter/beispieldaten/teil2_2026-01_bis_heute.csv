@@ -1,0 +1,631 @@
+monat,land_code,land,branche_code,branche,produktionsindex
+2026-01,AT,Austria,C,Manufacturing,102.3
+2026-01,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,115.2
+2026-01,AT,Austria,C20,Manufacture of chemicals and chemical products,95.0
+2026-01,AT,Austria,C24,Manufacture of basic metals,97.6
+2026-01,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",87.5
+2026-01,AT,Austria,C26,"Manufacture of computer, electronic and optical products",119.3
+2026-01,AT,Austria,C27,Manufacture of electrical equipment,99.2
+2026-01,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,99.4
+2026-01,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",96.6
+2026-01,DE,Germany,C,Manufacturing,91.8
+2026-01,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,97.0
+2026-01,DE,Germany,C20,Manufacture of chemicals and chemical products,76.2
+2026-01,DE,Germany,C24,Manufacture of basic metals,89.1
+2026-01,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",83.6
+2026-01,DE,Germany,C26,"Manufacture of computer, electronic and optical products",100.7
+2026-01,DE,Germany,C27,Manufacture of electrical equipment,86.1
+2026-01,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,88.8
+2026-01,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",102.5
+2026-01,ES,Spain,C,Manufacturing,100.1
+2026-01,ES,Spain,C20,Manufacture of chemicals and chemical products,92.9
+2026-01,ES,Spain,C24,Manufacture of basic metals,83.4
+2026-01,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",96.9
+2026-01,ES,Spain,C26,"Manufacture of computer, electronic and optical products",135.6
+2026-01,ES,Spain,C27,Manufacture of electrical equipment,107.6
+2026-01,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,102.7
+2026-01,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",109.1
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,99.3
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.7
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,78.6
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,88.5
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",91.5
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",95.0
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,97.0
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,98.8
+2026-01,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",104.1
+2026-01,FR,France,C,Manufacturing,103.7
+2026-01,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,97.2
+2026-01,FR,France,C20,Manufacture of chemicals and chemical products,92.9
+2026-01,FR,France,C24,Manufacture of basic metals,84.7
+2026-01,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",93.8
+2026-01,FR,France,C26,"Manufacture of computer, electronic and optical products",115.6
+2026-01,FR,France,C27,Manufacture of electrical equipment,104.1
+2026-01,FR,France,C28,Manufacture of machinery and equipment n.e.c.,92.2
+2026-01,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",101.9
+2026-01,IT,Italy,C,Manufacturing,93.0
+2026-01,IT,Italy,C20,Manufacture of chemicals and chemical products,83.1
+2026-01,IT,Italy,C24,Manufacture of basic metals,88.4
+2026-01,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.0
+2026-01,IT,Italy,C26,"Manufacture of computer, electronic and optical products",109.2
+2026-01,IT,Italy,C27,Manufacture of electrical equipment,94.6
+2026-01,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,98.1
+2026-01,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",79.7
+2026-01,NL,Netherlands,C,Manufacturing,104.5
+2026-01,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,102.1
+2026-01,NL,Netherlands,C20,Manufacture of chemicals and chemical products,76.2
+2026-01,NL,Netherlands,C24,Manufacture of basic metals,77.6
+2026-01,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",97.2
+2026-01,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",86.6
+2026-01,NL,Netherlands,C27,Manufacture of electrical equipment,161.4
+2026-01,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,140.9
+2026-01,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",73.4
+2026-01,PL,Poland,C,Manufacturing,111.4
+2026-01,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,120.0
+2026-01,PL,Poland,C20,Manufacture of chemicals and chemical products,97.3
+2026-01,PL,Poland,C24,Manufacture of basic metals,92.6
+2026-01,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",110.2
+2026-01,PL,Poland,C26,"Manufacture of computer, electronic and optical products",112.7
+2026-01,PL,Poland,C27,Manufacture of electrical equipment,86.4
+2026-01,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,150.8
+2026-01,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",132.4
+2026-02,AT,Austria,C,Manufacturing,102.2
+2026-02,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,115.2
+2026-02,AT,Austria,C20,Manufacture of chemicals and chemical products,93.6
+2026-02,AT,Austria,C24,Manufacture of basic metals,98.6
+2026-02,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",88.4
+2026-02,AT,Austria,C26,"Manufacture of computer, electronic and optical products",118.7
+2026-02,AT,Austria,C27,Manufacture of electrical equipment,101.3
+2026-02,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,101.0
+2026-02,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",98.4
+2026-02,DE,Germany,C,Manufacturing,91.9
+2026-02,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,97.1
+2026-02,DE,Germany,C20,Manufacture of chemicals and chemical products,76.4
+2026-02,DE,Germany,C24,Manufacture of basic metals,88.8
+2026-02,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",84.6
+2026-02,DE,Germany,C26,"Manufacture of computer, electronic and optical products",97.0
+2026-02,DE,Germany,C27,Manufacture of electrical equipment,87.9
+2026-02,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,88.0
+2026-02,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",103.7
+2026-02,ES,Spain,C,Manufacturing,100.9
+2026-02,ES,Spain,C20,Manufacture of chemicals and chemical products,94.4
+2026-02,ES,Spain,C24,Manufacture of basic metals,85.3
+2026-02,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",98.0
+2026-02,ES,Spain,C26,"Manufacture of computer, electronic and optical products",142.0
+2026-02,ES,Spain,C27,Manufacture of electrical equipment,106.3
+2026-02,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,103.3
+2026-02,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",107.5
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,100.0
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.5
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,78.9
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,89.0
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",92.4
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",99.4
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,97.9
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,99.1
+2026-02,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",104.9
+2026-02,FR,France,C,Manufacturing,103.7
+2026-02,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,96.4
+2026-02,FR,France,C20,Manufacture of chemicals and chemical products,92.9
+2026-02,FR,France,C24,Manufacture of basic metals,84.1
+2026-02,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",93.5
+2026-02,FR,France,C26,"Manufacture of computer, electronic and optical products",117.9
+2026-02,FR,France,C27,Manufacture of electrical equipment,105.6
+2026-02,FR,France,C28,Manufacture of machinery and equipment n.e.c.,90.6
+2026-02,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",100.1
+2026-02,IT,Italy,C,Manufacturing,93.9
+2026-02,IT,Italy,C20,Manufacture of chemicals and chemical products,81.0
+2026-02,IT,Italy,C24,Manufacture of basic metals,87.3
+2026-02,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",87.0
+2026-02,IT,Italy,C26,"Manufacture of computer, electronic and optical products",110.3
+2026-02,IT,Italy,C27,Manufacture of electrical equipment,94.6
+2026-02,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,99.0
+2026-02,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",80.0
+2026-02,NL,Netherlands,C,Manufacturing,102.9
+2026-02,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,98.7
+2026-02,NL,Netherlands,C20,Manufacture of chemicals and chemical products,76.3
+2026-02,NL,Netherlands,C24,Manufacture of basic metals,83.5
+2026-02,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",94.6
+2026-02,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",82.9
+2026-02,NL,Netherlands,C27,Manufacture of electrical equipment,160.8
+2026-02,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,142.5
+2026-02,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",74.4
+2026-02,PL,Poland,C,Manufacturing,111.5
+2026-02,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,118.5
+2026-02,PL,Poland,C20,Manufacture of chemicals and chemical products,100.9
+2026-02,PL,Poland,C24,Manufacture of basic metals,93.3
+2026-02,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",112.3
+2026-02,PL,Poland,C26,"Manufacture of computer, electronic and optical products",115.0
+2026-02,PL,Poland,C27,Manufacture of electrical equipment,83.2
+2026-02,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,140.2
+2026-02,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",135.6
+2026-03,AT,Austria,C,Manufacturing,102.3
+2026-03,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,115.5
+2026-03,AT,Austria,C20,Manufacture of chemicals and chemical products,90.7
+2026-03,AT,Austria,C24,Manufacture of basic metals,98.6
+2026-03,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",89.3
+2026-03,AT,Austria,C26,"Manufacture of computer, electronic and optical products",127.5
+2026-03,AT,Austria,C27,Manufacture of electrical equipment,103.9
+2026-03,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,102.3
+2026-03,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",96.2
+2026-03,DE,Germany,C,Manufacturing,91.4
+2026-03,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,96.2
+2026-03,DE,Germany,C20,Manufacture of chemicals and chemical products,77.4
+2026-03,DE,Germany,C24,Manufacture of basic metals,88.2
+2026-03,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",83.1
+2026-03,DE,Germany,C26,"Manufacture of computer, electronic and optical products",101.6
+2026-03,DE,Germany,C27,Manufacture of electrical equipment,89.6
+2026-03,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,86.2
+2026-03,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",104.1
+2026-03,ES,Spain,C,Manufacturing,104.3
+2026-03,ES,Spain,C20,Manufacture of chemicals and chemical products,100.9
+2026-03,ES,Spain,C24,Manufacture of basic metals,83.0
+2026-03,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",104.5
+2026-03,ES,Spain,C26,"Manufacture of computer, electronic and optical products",137.4
+2026-03,ES,Spain,C27,Manufacture of electrical equipment,109.6
+2026-03,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,102.3
+2026-03,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",114.7
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,101.1
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,103.4
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,79.7
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,89.2
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",93.1
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",105.6
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,99.5
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,98.8
+2026-03,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",106.1
+2026-03,FR,France,C,Manufacturing,104.9
+2026-03,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,97.4
+2026-03,FR,France,C20,Manufacture of chemicals and chemical products,94.2
+2026-03,FR,France,C24,Manufacture of basic metals,84.6
+2026-03,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",94.2
+2026-03,FR,France,C26,"Manufacture of computer, electronic and optical products",122.2
+2026-03,FR,France,C27,Manufacture of electrical equipment,104.9
+2026-03,FR,France,C28,Manufacture of machinery and equipment n.e.c.,91.5
+2026-03,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",101.4
+2026-03,IT,Italy,C,Manufacturing,94.3
+2026-03,IT,Italy,C20,Manufacture of chemicals and chemical products,80.7
+2026-03,IT,Italy,C24,Manufacture of basic metals,86.7
+2026-03,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.6
+2026-03,IT,Italy,C26,"Manufacture of computer, electronic and optical products",110.4
+2026-03,IT,Italy,C27,Manufacture of electrical equipment,99.6
+2026-03,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,99.3
+2026-03,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",84.7
+2026-03,NL,Netherlands,C,Manufacturing,105.8
+2026-03,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,100.2
+2026-03,NL,Netherlands,C20,Manufacture of chemicals and chemical products,77.7
+2026-03,NL,Netherlands,C24,Manufacture of basic metals,81.6
+2026-03,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",97.2
+2026-03,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",83.1
+2026-03,NL,Netherlands,C27,Manufacture of electrical equipment,142.8
+2026-03,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,148.9
+2026-03,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",74.4
+2026-03,PL,Poland,C,Manufacturing,119.3
+2026-03,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,126.1
+2026-03,PL,Poland,C20,Manufacture of chemicals and chemical products,104.1
+2026-03,PL,Poland,C24,Manufacture of basic metals,98.1
+2026-03,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",122.1
+2026-03,PL,Poland,C26,"Manufacture of computer, electronic and optical products",110.8
+2026-03,PL,Poland,C27,Manufacture of electrical equipment,89.9
+2026-03,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,146.9
+2026-03,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",137.6
+2026-04,AT,Austria,C,Manufacturing,101.7
+2026-04,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,113.4
+2026-04,AT,Austria,C20,Manufacture of chemicals and chemical products,89.8
+2026-04,AT,Austria,C24,Manufacture of basic metals,98.3
+2026-04,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",90.0
+2026-04,AT,Austria,C26,"Manufacture of computer, electronic and optical products",119.4
+2026-04,AT,Austria,C27,Manufacture of electrical equipment,107.6
+2026-04,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,97.5
+2026-04,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",97.3
+2026-04,DE,Germany,C,Manufacturing,91.5
+2026-04,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,95.2
+2026-04,DE,Germany,C20,Manufacture of chemicals and chemical products,78.8
+2026-04,DE,Germany,C24,Manufacture of basic metals,89.5
+2026-04,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",84.9
+2026-04,DE,Germany,C26,"Manufacture of computer, electronic and optical products",101.6
+2026-04,DE,Germany,C27,Manufacture of electrical equipment,90.6
+2026-04,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,88.0
+2026-04,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",98.7
+2026-04,ES,Spain,C,Manufacturing,103.5
+2026-04,ES,Spain,C20,Manufacture of chemicals and chemical products,99.5
+2026-04,ES,Spain,C24,Manufacture of basic metals,85.9
+2026-04,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",100.6
+2026-04,ES,Spain,C26,"Manufacture of computer, electronic and optical products",138.0
+2026-04,ES,Spain,C27,Manufacture of electrical equipment,115.6
+2026-04,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,106.2
+2026-04,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",115.6
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,101.2
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.4
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,81.1
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,90.5
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",94.3
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",103.2
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,100.4
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,101.0
+2026-04,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",103.4
+2026-04,FR,France,C,Manufacturing,105.5
+2026-04,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,97.3
+2026-04,FR,France,C20,Manufacture of chemicals and chemical products,94.4
+2026-04,FR,France,C24,Manufacture of basic metals,88.3
+2026-04,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",93.9
+2026-04,FR,France,C26,"Manufacture of computer, electronic and optical products",119.3
+2026-04,FR,France,C27,Manufacture of electrical equipment,105.1
+2026-04,FR,France,C28,Manufacture of machinery and equipment n.e.c.,96.0
+2026-04,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",100.1
+2026-04,IT,Italy,C,Manufacturing,94.5
+2026-04,IT,Italy,C20,Manufacture of chemicals and chemical products,87.7
+2026-04,IT,Italy,C24,Manufacture of basic metals,88.7
+2026-04,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",87.9
+2026-04,IT,Italy,C26,"Manufacture of computer, electronic and optical products",108.0
+2026-04,IT,Italy,C27,Manufacture of electrical equipment,95.6
+2026-04,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,100.2
+2026-04,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",85.8
+2026-04,NL,Netherlands,C,Manufacturing,108.4
+2026-04,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,101.1
+2026-04,NL,Netherlands,C20,Manufacture of chemicals and chemical products,81.0
+2026-04,NL,Netherlands,C24,Manufacture of basic metals,83.8
+2026-04,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",99.8
+2026-04,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",82.2
+2026-04,NL,Netherlands,C27,Manufacture of electrical equipment,158.7
+2026-04,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,158.0
+2026-04,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",75.5
+2026-04,PL,Poland,C,Manufacturing,113.8
+2026-04,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,117.4
+2026-04,PL,Poland,C20,Manufacture of chemicals and chemical products,102.9
+2026-04,PL,Poland,C24,Manufacture of basic metals,100.5
+2026-04,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",123.2
+2026-04,PL,Poland,C26,"Manufacture of computer, electronic and optical products",112.9
+2026-04,PL,Poland,C27,Manufacture of electrical equipment,89.2
+2026-04,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,142.6
+2026-04,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",133.0
+2026-05,AT,Austria,C,Manufacturing,101.2
+2026-05,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,111.8
+2026-05,AT,Austria,C20,Manufacture of chemicals and chemical products,91.1
+2026-05,AT,Austria,C24,Manufacture of basic metals,96.6
+2026-05,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",88.8
+2026-05,AT,Austria,C26,"Manufacture of computer, electronic and optical products",122.2
+2026-05,AT,Austria,C27,Manufacture of electrical equipment,106.5
+2026-05,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,96.6
+2026-05,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",95.1
+2026-05,DE,Germany,C,Manufacturing,92.2
+2026-05,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,96.6
+2026-05,DE,Germany,C20,Manufacture of chemicals and chemical products,79.9
+2026-05,DE,Germany,C24,Manufacture of basic metals,90.0
+2026-05,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.0
+2026-05,DE,Germany,C26,"Manufacture of computer, electronic and optical products",104.0
+2026-05,DE,Germany,C27,Manufacture of electrical equipment,89.4
+2026-05,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,87.7
+2026-05,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",102.5
+2026-05,ES,Spain,C,Manufacturing,104.1
+2026-05,ES,Spain,C20,Manufacture of chemicals and chemical products,102.4
+2026-05,ES,Spain,C24,Manufacture of basic metals,86.2
+2026-05,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",105.7
+2026-05,ES,Spain,C26,"Manufacture of computer, electronic and optical products",139.9
+2026-05,ES,Spain,C27,Manufacture of electrical equipment,116.8
+2026-05,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,105.1
+2026-05,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",113.2
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,101.2
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.5
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,80.7
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,90.3
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",94.2
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",104.5
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,100.2
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,101.2
+2026-05,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",105.1
+2026-05,FR,France,C,Manufacturing,104.4
+2026-05,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,97.2
+2026-05,FR,France,C20,Manufacture of chemicals and chemical products,92.0
+2026-05,FR,France,C24,Manufacture of basic metals,83.8
+2026-05,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",94.1
+2026-05,FR,France,C26,"Manufacture of computer, electronic and optical products",116.8
+2026-05,FR,France,C27,Manufacture of electrical equipment,108.2
+2026-05,FR,France,C28,Manufacture of machinery and equipment n.e.c.,90.8
+2026-05,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",96.7
+2026-05,IT,Italy,C,Manufacturing,94.1
+2026-05,IT,Italy,C20,Manufacture of chemicals and chemical products,87.8
+2026-05,IT,Italy,C24,Manufacture of basic metals,87.4
+2026-05,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",88.4
+2026-05,IT,Italy,C26,"Manufacture of computer, electronic and optical products",107.7
+2026-05,IT,Italy,C27,Manufacture of electrical equipment,93.4
+2026-05,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,98.3
+2026-05,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",85.2
+2026-05,NL,Netherlands,C,Manufacturing,109.7
+2026-05,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,101.9
+2026-05,NL,Netherlands,C20,Manufacture of chemicals and chemical products,77.0
+2026-05,NL,Netherlands,C24,Manufacture of basic metals,85.2
+2026-05,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",97.9
+2026-05,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",80.9
+2026-05,NL,Netherlands,C27,Manufacture of electrical equipment,159.2
+2026-05,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,169.1
+2026-05,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",72.9
+2026-05,PL,Poland,C,Manufacturing,115.8
+2026-05,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,119.4
+2026-05,PL,Poland,C20,Manufacture of chemicals and chemical products,102.2
+2026-05,PL,Poland,C24,Manufacture of basic metals,100.5
+2026-05,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",120.7
+2026-05,PL,Poland,C26,"Manufacture of computer, electronic and optical products",114.5
+2026-05,PL,Poland,C27,Manufacture of electrical equipment,93.0
+2026-05,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,148.9
+2026-05,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",134.0
+2026-06,AT,Austria,C,Manufacturing,102.6
+2026-06,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,115.8
+2026-06,AT,Austria,C20,Manufacture of chemicals and chemical products,88.9
+2026-06,AT,Austria,C24,Manufacture of basic metals,98.0
+2026-06,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",89.6
+2026-06,AT,Austria,C26,"Manufacture of computer, electronic and optical products",128.4
+2026-06,AT,Austria,C27,Manufacture of electrical equipment,107.0
+2026-06,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,99.0
+2026-06,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",101.9
+2026-06,DE,Germany,C,Manufacturing,92.1
+2026-06,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,95.5
+2026-06,DE,Germany,C20,Manufacture of chemicals and chemical products,78.3
+2026-06,DE,Germany,C24,Manufacture of basic metals,87.7
+2026-06,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",85.2
+2026-06,DE,Germany,C26,"Manufacture of computer, electronic and optical products",104.4
+2026-06,DE,Germany,C27,Manufacture of electrical equipment,90.3
+2026-06,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,84.4
+2026-06,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",105.7
+2026-06,ES,Spain,C,Manufacturing,103.0
+2026-06,ES,Spain,C20,Manufacture of chemicals and chemical products,98.8
+2026-06,ES,Spain,C24,Manufacture of basic metals,89.3
+2026-06,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",103.6
+2026-06,ES,Spain,C26,"Manufacture of computer, electronic and optical products",140.5
+2026-06,ES,Spain,C27,Manufacture of electrical equipment,118.5
+2026-06,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,105.4
+2026-06,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",107.7
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,101.0
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.6
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,78.7
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,90.0
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",94.1
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",100.2
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,101.0
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,99.2
+2026-06,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",106.1
+2026-06,FR,France,C,Manufacturing,103.4
+2026-06,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,96.1
+2026-06,FR,France,C20,Manufacture of chemicals and chemical products,89.9
+2026-06,FR,France,C24,Manufacture of basic metals,83.3
+2026-06,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",93.4
+2026-06,FR,France,C26,"Manufacture of computer, electronic and optical products",122.0
+2026-06,FR,France,C27,Manufacture of electrical equipment,107.5
+2026-06,FR,France,C28,Manufacture of machinery and equipment n.e.c.,90.3
+2026-06,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",94.1
+2026-06,IT,Italy,C,Manufacturing,93.4
+2026-06,IT,Italy,C20,Manufacture of chemicals and chemical products,84.2
+2026-06,IT,Italy,C24,Manufacture of basic metals,86.6
+2026-06,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.6
+2026-06,IT,Italy,C26,"Manufacture of computer, electronic and optical products",111.1
+2026-06,IT,Italy,C27,Manufacture of electrical equipment,94.6
+2026-06,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,96.7
+2026-06,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",81.1
+2026-06,NL,Netherlands,C,Manufacturing,108.6
+2026-06,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,99.0
+2026-06,NL,Netherlands,C20,Manufacture of chemicals and chemical products,77.6
+2026-06,NL,Netherlands,C24,Manufacture of basic metals,85.5
+2026-06,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",97.3
+2026-06,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",85.8
+2026-06,NL,Netherlands,C27,Manufacture of electrical equipment,156.0
+2026-06,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,163.9
+2026-06,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",73.1
+2026-06,PL,Poland,C,Manufacturing,115.7
+2026-06,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,120.2
+2026-06,PL,Poland,C20,Manufacture of chemicals and chemical products,100.1
+2026-06,PL,Poland,C24,Manufacture of basic metals,102.0
+2026-06,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",123.2
+2026-06,PL,Poland,C26,"Manufacture of computer, electronic and optical products",117.2
+2026-06,PL,Poland,C27,Manufacture of electrical equipment,94.9
+2026-06,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,141.2
+2026-06,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",134.4
+2026-07,AT,Austria,C,Manufacturing,102.4
+2026-07,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,116.5
+2026-07,AT,Austria,C20,Manufacture of chemicals and chemical products,92.8
+2026-07,AT,Austria,C24,Manufacture of basic metals,95.1
+2026-07,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",90.9
+2026-07,AT,Austria,C26,"Manufacture of computer, electronic and optical products",126.4
+2026-07,AT,Austria,C27,Manufacture of electrical equipment,110.1
+2026-07,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,100.9
+2026-07,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",97.3
+2026-07,DE,Germany,C,Manufacturing,90.1
+2026-07,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,95.2
+2026-07,DE,Germany,C20,Manufacture of chemicals and chemical products,75.9
+2026-07,DE,Germany,C24,Manufacture of basic metals,87.5
+2026-07,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",83.2
+2026-07,DE,Germany,C26,"Manufacture of computer, electronic and optical products",106.9
+2026-07,DE,Germany,C27,Manufacture of electrical equipment,91.2
+2026-07,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,86.1
+2026-07,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",96.7
+2026-07,ES,Spain,C,Manufacturing,103.7
+2026-07,ES,Spain,C20,Manufacture of chemicals and chemical products,98.8
+2026-07,ES,Spain,C24,Manufacture of basic metals,89.6
+2026-07,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",104.7
+2026-07,ES,Spain,C26,"Manufacture of computer, electronic and optical products",143.9
+2026-07,ES,Spain,C27,Manufacture of electrical equipment,115.7
+2026-07,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,104.8
+2026-07,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",110.0
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,100.5
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.5
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,79.3
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,88.9
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",93.1
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",106.4
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,100.9
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,101.9
+2026-07,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",100.3
+2026-07,FR,France,C,Manufacturing,102.5
+2026-07,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,96.5
+2026-07,FR,France,C20,Manufacture of chemicals and chemical products,87.2
+2026-07,FR,France,C24,Manufacture of basic metals,83.5
+2026-07,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",92.6
+2026-07,FR,France,C26,"Manufacture of computer, electronic and optical products",118.6
+2026-07,FR,France,C27,Manufacture of electrical equipment,105.4
+2026-07,FR,France,C28,Manufacture of machinery and equipment n.e.c.,89.8
+2026-07,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",95.0
+2026-07,IT,Italy,C,Manufacturing,93.7
+2026-07,IT,Italy,C20,Manufacture of chemicals and chemical products,82.0
+2026-07,IT,Italy,C24,Manufacture of basic metals,86.3
+2026-07,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",87.6
+2026-07,IT,Italy,C26,"Manufacture of computer, electronic and optical products",111.1
+2026-07,IT,Italy,C27,Manufacture of electrical equipment,94.1
+2026-07,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,98.1
+2026-07,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",78.7
+2026-07,NL,Netherlands,C,Manufacturing,111.2
+2026-07,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,99.7
+2026-07,NL,Netherlands,C20,Manufacture of chemicals and chemical products,79.1
+2026-07,NL,Netherlands,C24,Manufacture of basic metals,81.7
+2026-07,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",99.6
+2026-07,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",84.4
+2026-07,NL,Netherlands,C27,Manufacture of electrical equipment,150.5
+2026-07,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,177.1
+2026-07,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",66.6
+2026-07,PL,Poland,C,Manufacturing,116.7
+2026-07,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,121.6
+2026-07,PL,Poland,C20,Manufacture of chemicals and chemical products,97.1
+2026-07,PL,Poland,C24,Manufacture of basic metals,94.8
+2026-07,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",126.0
+2026-07,PL,Poland,C26,"Manufacture of computer, electronic and optical products",124.3
+2026-07,PL,Poland,C27,Manufacture of electrical equipment,95.8
+2026-07,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,155.7
+2026-07,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",135.8
+2026-08,AT,Austria,C,Manufacturing,102.0
+2026-08,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,112.9
+2026-08,AT,Austria,C20,Manufacture of chemicals and chemical products,92.4
+2026-08,AT,Austria,C24,Manufacture of basic metals,94.5
+2026-08,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",92.3
+2026-08,AT,Austria,C26,"Manufacture of computer, electronic and optical products",128.7
+2026-08,AT,Austria,C27,Manufacture of electrical equipment,111.2
+2026-08,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,99.6
+2026-08,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",90.3
+2026-08,DE,Germany,C,Manufacturing,90.9
+2026-08,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,95.8
+2026-08,DE,Germany,C20,Manufacture of chemicals and chemical products,74.8
+2026-08,DE,Germany,C24,Manufacture of basic metals,87.2
+2026-08,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.3
+2026-08,DE,Germany,C26,"Manufacture of computer, electronic and optical products",104.6
+2026-08,DE,Germany,C27,Manufacture of electrical equipment,93.1
+2026-08,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,91.1
+2026-08,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",92.3
+2026-08,ES,Spain,C,Manufacturing,102.1
+2026-08,ES,Spain,C20,Manufacture of chemicals and chemical products,94.6
+2026-08,ES,Spain,C24,Manufacture of basic metals,87.3
+2026-08,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",101.0
+2026-08,ES,Spain,C26,"Manufacture of computer, electronic and optical products",132.7
+2026-08,ES,Spain,C27,Manufacture of electrical equipment,115.3
+2026-08,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,103.7
+2026-08,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",114.4
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,100.2
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.6
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,77.7
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,88.5
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",93.9
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",104.0
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,102.3
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,105.1
+2026-08,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",98.9
+2026-08,FR,France,C,Manufacturing,102.8
+2026-08,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,95.3
+2026-08,FR,France,C20,Manufacture of chemicals and chemical products,91.5
+2026-08,FR,France,C24,Manufacture of basic metals,81.1
+2026-08,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",92.9
+2026-08,FR,France,C26,"Manufacture of computer, electronic and optical products",120.4
+2026-08,FR,France,C27,Manufacture of electrical equipment,108.9
+2026-08,FR,France,C28,Manufacture of machinery and equipment n.e.c.,89.4
+2026-08,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",92.2
+2026-08,IT,Italy,C,Manufacturing,93.2
+2026-08,IT,Italy,C20,Manufacture of chemicals and chemical products,81.9
+2026-08,IT,Italy,C24,Manufacture of basic metals,85.7
+2026-08,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",85.8
+2026-08,IT,Italy,C26,"Manufacture of computer, electronic and optical products",105.3
+2026-08,IT,Italy,C27,Manufacture of electrical equipment,89.8
+2026-08,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,98.8
+2026-08,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",85.4
+2026-08,NL,Netherlands,C,Manufacturing,114.5
+2026-08,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,101.1
+2026-08,NL,Netherlands,C20,Manufacture of chemicals and chemical products,76.1
+2026-08,NL,Netherlands,C24,Manufacture of basic metals,78.3
+2026-08,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",99.5
+2026-08,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",85.1
+2026-08,NL,Netherlands,C27,Manufacture of electrical equipment,160.4
+2026-08,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,190.3
+2026-08,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",82.9
+2026-08,PL,Poland,C,Manufacturing,114.6
+2026-08,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,121.2
+2026-08,PL,Poland,C20,Manufacture of chemicals and chemical products,96.1
+2026-08,PL,Poland,C24,Manufacture of basic metals,99.8
+2026-08,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",119.8
+2026-08,PL,Poland,C26,"Manufacture of computer, electronic and optical products",116.6
+2026-08,PL,Poland,C27,Manufacture of electrical equipment,97.6
+2026-08,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,152.2
+2026-08,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",129.2
+2026-09,AT,Austria,C,Manufacturing,101.9
+2026-09,AT,Austria,C10-C12,Manufacture of food products; beverages and tobacco products,105.5
+2026-09,AT,Austria,C20,Manufacture of chemicals and chemical products,93.2
+2026-09,AT,Austria,C24,Manufacture of basic metals,95.7
+2026-09,AT,Austria,C25,"Manufacture of fabricated metal products, except machinery and equipment",89.5
+2026-09,AT,Austria,C26,"Manufacture of computer, electronic and optical products",140.4
+2026-09,AT,Austria,C27,Manufacture of electrical equipment,111.9
+2026-09,AT,Austria,C28,Manufacture of machinery and equipment n.e.c.,103.0
+2026-09,AT,Austria,C29,"Manufacture of motor vehicles, trailers and semi-trailers",92.3
+2026-09,DE,Germany,C,Manufacturing,92.4
+2026-09,DE,Germany,C10-C12,Manufacture of food products; beverages and tobacco products,94.4
+2026-09,DE,Germany,C20,Manufacture of chemicals and chemical products,77.0
+2026-09,DE,Germany,C24,Manufacture of basic metals,85.0
+2026-09,DE,Germany,C25,"Manufacture of fabricated metal products, except machinery and equipment",86.9
+2026-09,DE,Germany,C26,"Manufacture of computer, electronic and optical products",107.8
+2026-09,DE,Germany,C27,Manufacture of electrical equipment,91.5
+2026-09,DE,Germany,C28,Manufacture of machinery and equipment n.e.c.,85.2
+2026-09,DE,Germany,C29,"Manufacture of motor vehicles, trailers and semi-trailers",108.1
+2026-09,ES,Spain,C,Manufacturing,103.7
+2026-09,ES,Spain,C20,Manufacture of chemicals and chemical products,95.6
+2026-09,ES,Spain,C24,Manufacture of basic metals,89.0
+2026-09,ES,Spain,C25,"Manufacture of fabricated metal products, except machinery and equipment",102.5
+2026-09,ES,Spain,C26,"Manufacture of computer, electronic and optical products",141.6
+2026-09,ES,Spain,C27,Manufacture of electrical equipment,122.9
+2026-09,ES,Spain,C28,Manufacture of machinery and equipment n.e.c.,104.5
+2026-09,ES,Spain,C29,"Manufacture of motor vehicles, trailers and semi-trailers",111.4
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C,Manufacturing,100.9
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C10-C12,Manufacture of food products; beverages and tobacco products,102.5
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C20,Manufacture of chemicals and chemical products,79.3
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C24,Manufacture of basic metals,88.8
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C25,"Manufacture of fabricated metal products, except machinery and equipment",94.8
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C26,"Manufacture of computer, electronic and optical products",96.2
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C27,Manufacture of electrical equipment,103.0
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C28,Manufacture of machinery and equipment n.e.c.,102.4
+2026-09,EU27_2020,European Union - 27 countries (from 2020),C29,"Manufacture of motor vehicles, trailers and semi-trailers",108.3
+2026-09,FR,France,C,Manufacturing,103.4
+2026-09,FR,France,C10-C12,Manufacture of food products; beverages and tobacco products,96.3
+2026-09,FR,France,C20,Manufacture of chemicals and chemical products,92.3
+2026-09,FR,France,C24,Manufacture of basic metals,81.5
+2026-09,FR,France,C25,"Manufacture of fabricated metal products, except machinery and equipment",93.0
+2026-09,FR,France,C26,"Manufacture of computer, electronic and optical products",123.6
+2026-09,FR,France,C27,Manufacture of electrical equipment,110.6
+2026-09,FR,France,C28,Manufacture of machinery and equipment n.e.c.,92.3
+2026-09,FR,France,C29,"Manufacture of motor vehicles, trailers and semi-trailers",99.1
+2026-09,IT,Italy,C,Manufacturing,93.8
+2026-09,IT,Italy,C20,Manufacture of chemicals and chemical products,78.6
+2026-09,IT,Italy,C24,Manufacture of basic metals,87.5
+2026-09,IT,Italy,C25,"Manufacture of fabricated metal products, except machinery and equipment",87.3
+2026-09,IT,Italy,C26,"Manufacture of computer, electronic and optical products",109.0
+2026-09,IT,Italy,C27,Manufacture of electrical equipment,94.5
+2026-09,IT,Italy,C28,Manufacture of machinery and equipment n.e.c.,98.4
+2026-09,IT,Italy,C29,"Manufacture of motor vehicles, trailers and semi-trailers",80.8
+2026-09,NL,Netherlands,C,Manufacturing,114.7
+2026-09,NL,Netherlands,C10-C12,Manufacture of food products; beverages and tobacco products,101.1
+2026-09,NL,Netherlands,C20,Manufacture of chemicals and chemical products,80.1
+2026-09,NL,Netherlands,C24,Manufacture of basic metals,76.4
+2026-09,NL,Netherlands,C25,"Manufacture of fabricated metal products, except machinery and equipment",99.4
+2026-09,NL,Netherlands,C26,"Manufacture of computer, electronic and optical products",82.8
+2026-09,NL,Netherlands,C27,Manufacture of electrical equipment,165.5
+2026-09,NL,Netherlands,C28,Manufacture of machinery and equipment n.e.c.,186.8
+2026-09,NL,Netherlands,C29,"Manufacture of motor vehicles, trailers and semi-trailers",74.6
+2026-09,PL,Poland,C,Manufacturing,119.5
+2026-09,PL,Poland,C10-C12,Manufacture of food products; beverages and tobacco products,125.9
+2026-09,PL,Poland,C20,Manufacture of chemicals and chemical products,102.9
+2026-09,PL,Poland,C24,Manufacture of basic metals,104.0
+2026-09,PL,Poland,C25,"Manufacture of fabricated metal products, except machinery and equipment",125.4
+2026-09,PL,Poland,C26,"Manufacture of computer, electronic and optical products",123.3
+2026-09,PL,Poland,C27,Manufacture of electrical equipment,98.0
+2026-09,PL,Poland,C28,Manufacture of machinery and equipment n.e.c.,156.7
+2026-09,PL,Poland,C29,"Manufacture of motor vehicles, trailers and semi-trailers",137.2
