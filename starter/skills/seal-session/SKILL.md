@@ -1,6 +1,8 @@
 ---
 name: seal-session
 description: Schließt eine Session ab. Hält Gelerntes, Entscheidungen und Fehler im Vault fest, schreibt die STAND.md des betroffenen Projekts neu und legt eine Session-Notiz an. Nur ausführen, wenn die Person ausdrücklich `/seal-session` oder `$seal-session` aufruft. Lesen oder Erklären des Skills löst keine Versiegelung aus.
+disable-model-invocation: true
+argument-hint: "[optional: Titel oder Fokus der Session]"
 ---
 
 # Session versiegeln
@@ -24,9 +26,10 @@ Geh die gesamte Unterhaltung durch und sammle:
 - **Entscheidungen** mit Begründung
 - **Fehler** mit nicht offensichtlicher Ursache: Symptom, Ursache, Lösung
 - **Offene Punkte** und den **nächsten konkreten Schritt**
+- **Regeln und Vorlieben**, die die Person genannt oder korrigiert hat („merk dir“, „mach das nicht mehr so“). Sie gehören in Dateien, nicht nur ins automatische Gedächtnis deines Programms: Nur so gelten sie in jeder Session und bleiben, auch wenn die Person das Programm oder das Abo wechselt. Ablage laut Abschnitt „Merk dir das“ in `<Vault>/AGENTS.md`, Regeln für ein Projekt in dessen `AGENTS.md` (Text ändern nur nach Ja, siehe Schritt 2)
 - **Kontext**: Typ (`coding`, `schreiben`, `klärung`, `gemischt`), Projekt (Ordnername unter `projects/`, sonst leer)
 
-Gab es nichts Neues, Gelerntes oder Entschiedenes, sag das und hör auf. Nicht jede Session muss versiegelt werden.
+Hat die Person beim Aufruf einen Titel oder Fokus angegeben (`$ARGUMENTS`), richte die Session-Notiz danach aus. Gab es nichts Neues, Gelerntes oder Entschiedenes, sag das und hör auf. Nicht jede Session muss versiegelt werden.
 
 ## 2. Wissen ablegen
 
@@ -106,6 +109,8 @@ projekt: <Ordnername unter projects/ oder leer>
 
 Leere Abschnitte weglassen. Kurz halten: Details stehen in den verlinkten Notizen. Innerhalb des Vaults immer `[[Wikilinks]]`, Dateien außerhalb (Projekte) als Pfad in Backticks.
 
+Offene Punkte früherer Session-Notizen, die diese Session erledigt hat, dort auf `- [x]` setzen. Das ist ohne Rückfrage erlaubt, anderer Text bleibt unverändert.
+
 ## 7. Abschlussbericht
 
 Zeig der Person knapp:
@@ -113,7 +118,7 @@ Zeig der Person knapp:
 - angelegte und ergänzte Dateien, jeweils mit Pfad
 - den neuen Inhalt der `STAND.md` mit Pfad, damit die Person ihn prüfen kann
 - den nächsten konkreten Schritt
-- Änderungen im Projekt, die noch nicht committet sind, und den Commit-Vorschlag
+- Änderungen im Projekt, die noch nicht committet sind, und den Commit-Vorschlag. Dateien, die wie Zugangsdaten aussehen (`.env`, `*password*`, `*token*`, Schlüssel), nie in den Commit-Vorschlag aufnehmen, sondern als Warnung nennen
 - Vorschläge, die eine Rückfrage brauchen (Text ändern oder löschen, Index kürzen, neuer Bereich, ADR)
 
 ## Regeln
