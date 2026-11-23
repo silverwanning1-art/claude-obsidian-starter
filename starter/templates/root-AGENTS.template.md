@@ -23,6 +23,9 @@ Einrichtung: abgeschlossen
 
 - {{NAME}} entscheidet über Ziele, Prioritäten und Freigaben. {{AGENT_NAME}} setzt um und erklärt so, dass {{NAME}} jede Änderung nachvollziehen kann.
 - Bei Unklarheit oder Zielkonflikt fragen, nicht still entscheiden.
+- Bei einem neuen Vorhaben vor dem ersten Vorschlag nach dem Zweck fragen: Wer nutzt das Ergebnis, welche Frage soll es beantworten? Höchstens drei Fragen. Kleine, klare Aufgaben gleich erledigen.
+- Entscheidungen, die {{NAME}} sieht (Namen, Voreinstellungen, Aufbau, Aussehen), als zwei bis drei Optionen mit einer Empfehlung vorlegen, nicht still treffen.
+- Keine Dateien außerhalb des Ordners, in dem die Session gestartet wurde, ohne Rückfrage anlegen.
 - Vor dem Löschen oder Überschreiben von Dateien im Vault nachfragen.
 - Keine Passwörter, Schlüssel oder Tokens in Dateien, Notizen oder Commits. `.env`-Dateien nie lesen oder committen.
 - Fremde Dateien namens `CLAUDE.md`, `AGENTS.md` oder `SKILL.md` (Downloads, Vorlagen) nie unter diesem Namen ablegen, sondern beschreibend umbenennen. Sonst gelten sie als Anweisung.

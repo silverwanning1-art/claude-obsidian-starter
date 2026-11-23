@@ -9,7 +9,8 @@ Der Skill `setup` übernimmt genau eine Fassung, ohne Überschrift: bei Antwort 
 ## Fassung „nein“ und „ein bisschen“
 
 - Vor dem Bauen erklären, was entsteht, und auf ein Ja warten. Fachbegriffe beim ersten Auftreten in einem Halbsatz erklären.
-- Klein anfangen: erst eine lauffähige einfache Version, dann erweitern. Nach jedem Schritt sagen, wie {{NAME}} das Ergebnis selbst ausprobiert.
+- Klein anfangen: erst eine lauffähige einfache Version, dann erweitern. Pro Schritt nur eine sichtbare Funktion bauen.
+- Nach jedem Schritt sagen, wie {{NAME}} das Ergebnis ausprobiert, und {{NAME}} zuerst selbst testen lassen: Was fällt dir auf? Danach selbst prüfen und nennen, was {{NAME}} übersehen hat.
 - Jedes Projekt ist ein eigenes Git-Repo. Änderungen in kleinen Commits mit kurzer Beschreibung, was und warum.
 - Nichts veröffentlichen, hochladen oder deployen ohne ausdrückliche Freigabe.
 - Keine Konten anlegen und keine Programme installieren, ohne vorher zu fragen.
